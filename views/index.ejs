@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <br>
+
+  <div class="container">
+    <h3>Văn bản cần dịch</h3>
+    <form action="/translate" method="POST" id='linkSource'>
+      <div class="form-group">
+        <label for= 'url'>Nhập văn bản cần dịch</label>
+        <textarea type="text" class="form-control" name="txtNoiDung"></textarea>
+      </div>
+
+      <div class="form-group">
+          <label for="language">Chọn ngôn ngữ cần dịch</label>
+          <select multiple class="form-control" id="language" name="language">
+            
+            <% for (var i = 0; i < data.country['country'].length; i++) {%>
+
+              <option value="<%= data.country['country'][i].lang%>"><%= data.country['country'][i].country %></option>
+
+            <%}%>
+           
+          </select>
+        </div>
+        <input id="btn-dich" type="submit" class="btn btn-success" value="Dịch"></input>
+      
+    </form>
+  </div>
+
+  <script>
+
+  </script>
+
+</body>
+
+</html>

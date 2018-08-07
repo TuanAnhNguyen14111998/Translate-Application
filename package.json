@@ -1,0 +1,28 @@
+{
+  "name": "translate-application",
+  "version": "1.0.0",
+  "description": "start from 07/08/2018",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TuanAnhNguyen14111998/Translate-Application.git"
+  },
+  "author": "TuanAnhNguyen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TuanAnhNguyen14111998/Translate-Application/issues"
+  },
+  "homepage": "https://github.com/TuanAnhNguyen14111998/Translate-Application#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "google-translate-api": "^2.3.0",
+    "morgan": "^1.9.0",
+    "request": "^2.87.0"
+  }
+}
